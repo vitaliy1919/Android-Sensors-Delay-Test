@@ -1,0 +1,25 @@
+﻿<Window x:Class="Sensor_Test_Visual.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sensor_Test_Visual"
+        mc:Ignorable="d"
+        
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Name="grid">
+        <Canvas Name="canvas" Height="300" Width="300">
+        </Canvas>
+        <WrapPanel Orientation = "Vertical">
+            <Button Click="CalibrateButton_Click" x:Name="calibrateButton" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                Calibrate
+            </Button>
+            <Button Click="StartRecordButton_Click" x:Name="startRecordButton" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                Start Recording
+            </Button>
+            <Button Click="StopRecordButton_Click" x:Name="stopRecordButton" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                Stop Recording
+            </Button>
+        </WrapPanel>
+    </Grid>
+</Window>
