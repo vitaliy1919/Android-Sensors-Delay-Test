@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Sensor_Test_Visual"
         mc:Ignorable="d"
         
-        Title="MainWindow" Height="450" Width="800">
+        Title="Android Sensor Latency Test" Height="450" Width="800">
     <Grid Name="grid">
         <Canvas Name="canvas" Height="300" Width="300">
         </Canvas>
