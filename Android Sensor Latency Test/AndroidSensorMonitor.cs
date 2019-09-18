@@ -7,9 +7,40 @@ using System.Threading;
 
 namespace Android_Sensor_Test
 {
+    enum SensorType
+    {
+        ACCELEROMETER = 1,
+        ACCELEROMETER_UNCALIBRATED = 35,
+        ALL = -1,
+        AMBIENT_TEMPERATURE = 13,
+        DEVICE_PRIVATE_BASE = 65536,
+        GAME_ROTATION_VECTOR = 15,
+        GEOMAGNETIC_ROTATION_VECTOR = 20,
+        GRAVITY = 9,
+        GYROSCOPE = 4,
+        GYROSCOPE_UNCALIBRATED = 16,
+        HEART_BEAT = 31,
+        HEART_RATE = 21,
+        LIGHT = 5,
+        LINEAR_ACCELERATION = 10,
+        LOW_LATENCY_OFFBODY_DETECT = 34,
+        MAGNETIC_FIELD = 2,
+        MAGNETIC_FIELD_UNCALIBRATED = 14,
+        MOTION_DETECT = 30,
+        ORIENTATION = 3,
+        POSE_6DOF = 28,
+        PRESSURE = 6,
+        PROXIMITY = 8,
+        RELATIVE_HUMIDITY = 12,
+        ROTATION_VECTOR = 11,
+        SIGNIFICANT_MOTION = 17,
+        STATIONARY_DETECT = 29,
+        STEP_COUNTER = 19,
+        STEP_DETECTOR = 18
+    }
     class SensorData
     {
-        public string type;
+        public SensorType type;
         public long timestamp;
         public float[] values;
     }

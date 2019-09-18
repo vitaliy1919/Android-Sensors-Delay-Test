@@ -3,6 +3,12 @@
 
 This app uses [the library](https://github.com/vitaliy1919/Android-Sensor-Data-Backend) to visually test the latency of the data acquired from the phone and to record the data in order to analyze the data later.
 ![Main screen](images/latency_test_main_screen.png)
+## Prerequisites
+- Microsoft Visual Studio 2019
+- .NET Core 2.2
+- ADB tools downladed on your PC 
+- USB debugging turned on your phone.
+- Newton.JSON (v12.0.2) library for json object deserialization.
 
 ## Usage
 Connect your phone to the PC and run [the app](https://github.com/vitaliy1919/Android-Sensors-Data-to-PC) (pay attention to prerequisites there). After that start this app. 

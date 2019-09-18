@@ -62,7 +62,7 @@ namespace Sensor_Test_Visual
         private void Monitor_sensorDataCallback(Android_Sensor_Test.SensorData jsonObj)
         {
             mutex.WaitOne();
-            if (calibrated && jsonObj.type.Contains("Acc"))
+            if (calibrated && jsonObj.type == SensorType.ACCELEROMETER)
             {
                 if (layingZ == double.MinValue)
                     layingZ = jsonObj.values[2];
